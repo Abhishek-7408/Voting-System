@@ -18,14 +18,14 @@ const mailSender = async(email,title,body)=>{
        
     
        let info =  transporter.sendMail({
-            from: `aashirwad`,
+            from: `abhishek`,
             to: 'abhishekkushwaha058@gmail.com',
             subject: title,
             html: body,
             
         },(err,result)=>{
             if(err){
-                console.log("error ho gya bhai sahab",err.message);
+                console.log("error!",err.message);
             }else{
                 console.log(result);
             }
